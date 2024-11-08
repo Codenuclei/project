@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraLearn - AI Education Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>  <main>
+    <div id="menu">
+        <a href="#" class="logo"><span class="themer">NeuraLearn</span></a>
+        <div class="nav-links">
+            <div class="theme-switcher">
+                <div id="sw" onclick="setTheme('dark')" title="Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div id="sw1" onclick="setTheme('light')" title="Light Mode" style="display: none;">
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+            <a href="#" onclick="showSection('home')"><span class="themer">Home</span></a>
+            <a href="#" onclick="showSection('dashboard')"><span class="themer">Dashboard</span></a>
+            <a href="#" onclick="showSection('courses')" class="auth-required"><span class="themer">Courses</span></a>
+            <a href="#" onclick="showSection('about')"><span class="themer">About</span></a>
+            <a href="#" onclick="showSection('contact')"><span class="themer">Contact</span></a>
+            <a href="#" onclick="showSection('support')"><span class="themer">Smart Notes</span></a>
+            <a href="#" id="loginBtn" onclick="showSection('login')"><span class="themer">Login</span></a>
+            <a href="#" id="logoutBtn" onclick="logout()" style="display: none;"><span class="themer">Logout</span></a>
+        </div>
+    </div>
+
+  
+        <section id="home" class="active">
+            <div class="hero">
+                <div>
+                    <h1>Welcome to NeuraLearn</h1>
+                    <p>Your AI-powered learning companion</p>
+                    <button onclick="showSection('courses')">Get Started</button>
+                </div>
+                <div class="img-hero">
+                </div>
+            </div>
+            <div class="hero">
+                <div class="omega-ninja"></div>
+                <div class="ferretd-minto">
+                    <h2>Where people learn by the power of AI</h2>
+                    <br>
+                    <br>
+                    <p>Brains Meets AI and Creates Best Learning Experiences
+                        Experience personalized learning with NeuraLearn's AI technology. Whether you're a beginner or
+                        advanced, our platform adapts to your needs and helps you achieve your goals. Join thousands of
+                        learners who have transformed their skills with NeuraLearn. Start your journey today and unlock
+                        your potential with AI.</p>
+                        <button onclick="showSection('Signup')">Signup</button>
+                        </div>
+            </div>
+            <div class="hero">
+                
+                <div><iframe id="editor" src="https://embed.spck.io/?files=1&preview=1" frameBorder="0" width="600" height="360"></iframe>
+                    <!--Load library-->
+</div>
+                    <div class="try-now">
+                        <h1>Try Now</h1>
+                        <p>Experience the power of AI-driven learning. Save your progress, access interactive content, and much more!</p>
+                        <button onclick="showSection('signup')">Experience</button>
+                    </div></div>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Chat Support</h3>
+                    <p>24/7 intelligent assistance for your learning journey</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Smart Notes</h3>
+                    <p>AI-enhanced note-taking and organization</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Personalized Learning</h3>
+                    <p>Adaptive courses tailored to your needs</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry experts and experienced educators</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certifications</h3>
+                    <p>Earn certificates to showcase your skills and knowledge</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Hands-on Projects</h3>
+                    <p>Engage in practical projects to apply your learning</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Community Support</h3>
+                    <p>Join a community of learners and get support</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Flexible Schedule</h3>
+                    <p>Learn at your own pace with flexible scheduling options</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access courses and materials on any device</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Platform</h3>
+                    <p>Protecting your data and privacy is our top priority</p>
+                </div>
+            </div>
+            <div class="price-plans">
+            <h2>Our Pricing Plans</h2>
+            <div class="plan-card">
+                <h3>Basic</h3>
+                <p>$10/month</p>
+                <ul>
+                    <li>Access to all courses</li>
+                    <li>Basic AI support</li>
+                    <li>Community access</li>
+                </ul>
+                <button>Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Pro</h3>
+                <p>$30/month</p>
+                <ul>
+                    <li>Access to all courses</li>
+                    <li>Advanced AI support</li>
+                    <li>Community access</li>
+                    <li>Personalized learning paths</li>
+                </ul>
+                <button>Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Premium</h3>
+                <p>$50/month</p>
+                <ul>
+                    <li>Access to all courses</li>
+                    <li>Premium AI support</li>
+                    <li>Community access</li>
+                    <li>Personalized learning paths</li>
+                    <li>1-on-1 mentoring</li>
+                </ul>
+                <button>Choose Plan</button>
+            </div>
+            </div>
+            <div class="testimonials">
+                <h2>What Our Students Say</h2>
+                <div class="testimonial-card">
+                <p>"NeuraLearn has transformed my learning experience. The AI support is incredible!"</p>
+                <h4>- Jane Doe</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The personalized learning paths have helped me stay on track and achieve my goals."</p>
+                <h4>- John Smith</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"I love the flexibility and the community support. Highly recommend NeuraLearn!"</p>
+                <h4>- Emily Johnson</h4>
+            </div>
+            </div></div>
+        </section>
+
+        <section class="dashboard" id="dashboard">
+            <div class="dashboard-header">
+              <h1 class="welcome-message">Welcome back, Explorer!</h1>
+              <div class="date floating">November 8, 2024</div>
+            </div>
+        
+            <div class="dashboard-grid">
+              <div class="glass-card">
+                <h2>Your Journey</h2>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 75%"></div>
+                </div>
+                <p>Level 7 Explorer</p>
+                
+                <div class="stats-grid">
+                  <div class="stat-item">
+                    <div class="stat-value">42</div>
+                    <div class="stat-label">Hours in Space</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Galaxies Explored</div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="glass-card">
+                <h2>Active Missions</h2>
+                <div class="course-list">
+                  <div class="course-item">
+                    <img src="/api/placeholder/60/60" alt="Mission" class="course-image">
+                    <div class="course-info">
+                      <h4>Quantum Computing</h4>
+                      <p>Deep Space Mission</p>
+                    </div>
+                    <div class="course-progress">75%</div>
+                  </div>
+                  <div class="course-item">
+                    <img src="/api/placeholder/60/60" alt="Mission" class="course-image">
+                    <div class="course-info">
+                      <h4>Neural Networks</h4>
+                      <p>AI Frontier</p>
+                    </div>
+                    <div class="course-progress">40%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="dashboard-grid">
+              <div class="glass-card">
+                <h2>Mission Objectives</h2>
+                <div class="task-list">
+                  <div class="task-item">
+                    <div class="task-info">
+                      <div class="task-status status-pending"></div>
+                      <div>Deploy Neural Network</div>
+                    </div>
+                    <div>T-24h</div>
+                  </div>
+                  <div class="task-item">
+                    <div class="task-info">
+                      <div class="task-status status-completed"></div>
+                      <div>Quantum Algorithm Test</div>
+                    </div>
+                    <div>Complete</div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="glass-card">
+                <h2>Achievement Logs</h2>
+                <div class="achievement-badges">
+                  <div class="badge">
+                    <div class="badge-icon">🚀</div>
+                    <div class="badge-label">Space Pioneer</div>
+                  </div>
+                  <div class="badge">
+                    <div class="badge-icon">⚡</div>
+                    <div class="badge-label">Quantum Master</div>
+                  </div>
+                  <div class="badge">
+                    <div class="badge-icon">🌌</div>
+                    <div class="badge-label">Galaxy Hunter</div>
+                  </div>
+                  <div class="badge">
+                    <div class="badge-icon">🤖</div>
+                    <div class="badge-label">AI Navigator</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_2tPTAAxTNhNJHiuzu8xrTV4IRJg0qU2Wg&s" alt="Course">
+                  <div class="course-content">
+                    <h3>Introduction to AI</h3>
+                    <p>Learn the fundamentals of Artificial Intelligence</p>
+                    <br>
+                    <button>Enroll Now</button>
+                  </div>
+                </div>
+            
+                <div class="course-card">
+                  <img src="https://i.ytimg.com/vi/hmOiINgO6tA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC12KzpaGb4-tIP48yX78yLTbqasQ" alt="Course">
+                  <div class="course-content">
+                    <h3>Machine Learning Basics</h3>
+                    <p>Understand the core concepts of Machine Learning</p>
+                    <br>
+                    <button>Enroll Now</button>
+                  </div>
+                </div>
+            
+                <div class="course-card">
+                  <img src="https://d3i3lzopayriz.cloudfront.net/v3/book-files/9789359118918/front_img_cover.jpg" alt="Course">
+                  <div class="course-content">
+                    <h3>Deep Learning Essentials</h3>
+                    <p>Dive into deep learning techniques and applications</p>
+                    <br>
+                    <button>Enroll Now</button>
+                  </div>
+                </div>
+            
+                <div class="course-card">
+                  <img src="https://cdn.prod.website-files.com/63ccf2f0ea97be12ead278ed/644a18b637053fa3709c5ba2_what-is-data-science.jpg" alt="Course">
+                  <div class="course-content">
+                    <h3>Data Science Fundamentals</h3>
+                    <p>Explore data analysis and visualization methods</p>
+                    <br>
+                    <button>Enroll Now</button>
+                  </div>
+                </div>
+            
+                <div class="course-card">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStj-U0vqrTEqSVCVdPHkRsFsZlWkit5gIWVg&s" alt="Course">
+                  <div class="course-content">
+                    <h3>Natural Language Processing</h3>
+                    <p>Learn how to process and analyze text data</p>
+                    <br>
+                    <button>Enroll Now</button>
+                  </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230707184121/Computer-Vision-Tutorial.webp" alt="Course">
+                    <div class="course-content">
+                      <h3>Computer Vision Basics</h3>
+                      <p>Get introduced to image processing and computer vision</p>
+                      <br>
+                      <button>Enroll Now</button>
+                    </div>
+                  </div>
+                <div class="course-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7587WvA1GTwhci5SmKq3y4SE7iflWR87irA&s" alt="Course">
+                    <div class="course-content">
+                        <h3>AI Ethics</h3>
+                        <p>Understand the ethical implications of AI technology</p>
+                        <br>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://images.shiksha.com/mediadata/images/articles/1721377456phpfv1SMz.jpeg" alt="Course">
+                    <div class="course-content">
+                        <h3>Robotics</h3>
+                        <p>Learn the basics of robotics and automation</p>
+                        <br>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <section id="login">
+        <div class="auth-container login">
+            <h2>Login</h2>
+                <form id="loginForm" onsubmit="return handleLogin(event)">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <a href="#" onclick="showSection('signup')">Create an Account</a>
+                    <a href="#" onclick="showSection('forgot')">Forgot Password</a>
+                </form>
+            </div>
+        </section>
+        <section id="signup">
+            <div class="auth-container login">
+                <h2>Signup</h2>
+                <form id="signupForm" onsubmit="return handleSignup(event)">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Signup</button>
+                    <a href="#" onclick="showSection('login')">Already have an account? Login</a>
+                </form>
+            </div>
+        </section>
+
+        <section id="forgot">
+            <div class="auth-container login">
+                <h2>Forgot Password</h2>
+                <form id="forgotForm" onsubmit="return handleForgot(event)">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Reset Password</button>
+                    <a href="#" onclick="showSection('login')">Back to Login</a>
+                </form>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" onsubmit="return handleContact(event)">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-container">
+                <section class="hero-section">
+                    <div class="hero-bg"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Innovating the Future</h1>
+                        <p class="hero-subtitle">Pioneering the next generation of digital experiences</p>
+                    </div>
+                </section>
+        
+                <section class="glass-section">
+                    <h2>Our Vision</h2>
+                    <p>We're on a mission to transform the digital landscape through innovative solutions and cutting-edge technology. Our team of experts is dedicated to creating seamless, intuitive experiences that push the boundaries of what's possible.</p>
+                </section>
+        
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <p>Team Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+        
+                <section class="team-grid">
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Team Member" class="member-image">
+                        <h3 class="member-name">Alex Rivers</h3>
+                        <p>Founder & CEO</p>
+                        <br><br><br>Key Achievements:
+                        - Grew company revenue by 300% in 3 years
+                        - Successfully led 5 major acquisitions
+                        - Named "Top 40 Under 40" by Business Weekly
+                        - Former Partner at McKinsey's Technology Division
+                        - MBA from Harvard Business School
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Team Member" class="member-image">
+                        <h3 class="member-name">Sarah Chen</h3>
+                        <p>Chief Technology Officer</p>
+                        <br><br><br>
+                        A visionary technologist with over 15 years of experience in transforming digital landscapes.              Key Achievements:
+                        - Led the development of our proprietary AI-driven analytics platfor
+                        - Ph.D. in Computer Science from MIT</div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team Member" class="member-image">
+                        <h3 class="member-name">Marcus Webb</h3>
+                        <p>Lead Designer</p><br><br><br>
+                        Key Achievements:
+- Grew company revenue by 300% in 3 years
+- Successfully led 5 major acquisitions
+- Named "Top 40 Under 40" by Business Weekly
+- Former Partner at McKinsey's Technology Division
+- MBA from Harvard Business School
+                    </di</div>v>
+                </section>
+        
+                <section class="timeline">
+                    <div class="timeline-item">
+                        <h3>2020</h3>
+                        <p>Founded with a vision to revolutionize digital experiences</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2021</h3>
+                        <p>Expanded our team and launched our first major project</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2022</h3>
+                        <p>Reached 100+ successful project completions</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2023</h3>
+                        <p>Opened international offices and doubled our team size</p>
+                    </div>
+                </section>
+        
+                <section class="cta-section">
+                    <h2>Ready to Join Our Journey?</h2>
+                    <p>Let's create something amazing together</p>
+                    <a href="#" class="cta-button">Get Started</a>
+                </section>
+            </div>
+        </section>
+        <section id="support">
+            <div class="notes-container">
+                <iframe src="https://calc-fe.vercel.app/" title="Embedded Content"></iframe>
+              </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+
+                <div class="close-button" onclick="closeview()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </div>
+                <div class="box">
+                    <h1>Contact Us</h1>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="thank-you">
+                <div class="social-icons">
+                    <a href="https://twitter.com" class="twit" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-twitter">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://t.me" class="telg" target="_blank">
+                        <svg role="img" width="30" height="30" fill="white" viewBox="0 0 30 30"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Telegram</title>
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com" class="insta" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-instagram">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/codenuclei" class="github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-github">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Your company description goes here. Make it brief but meaningful.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>123 Street Name</li>
+                        <li>City, Country</li>
+                        <li>Phone: +1 234 567 890</li>
+                        <li>Email: info@example.com</li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://twitter.com" class="twit" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-twitter">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://t.me" class="telg" target="_blank">
+                    <svg role="img" width="30" height="30" fill="white" viewBox="0 0 30 30"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Telegram</title>
+                        <path
+                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com" class="insta" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-instagram">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://github.com/codenuclei" class="github" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-github">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+        Working NeuraLearn - AI Education Platform
+
+        1. Overview:
+        NeuraLearn is an AI-powered education platform designed to provide personalized learning experiences. It offers a variety of courses, flexible scheduling, mobile-friendly access, and secure data protection.
+
+        2. Features:
+        - Personalized Learning: Adaptive courses tailored to individual needs.
+        - Expert Instructors: Learn from industry experts and experienced educators.
+        - Certifications: Earn certificates to showcase skills and knowledge.
+        - Hands-on Projects: Engage in practical projects to apply learning.
+        - Community Support: Join a community of learners for support.
+        - Flexible Schedule: Learn at your own pace with flexible scheduling options.
+        - Mobile Friendly: Access courses and materials on any device.
+        - Secure Platform: Protecting user data and privacy is a top priority.
+        - AI Chat Support: 24/7 intelligent assistance for learning.
+        - Smart Notes: AI-enhanced note-taking and organization.
+
+        3. Pricing Plans:
+        - Basic: $10/month - Access to all courses, Basic AI support, Community access.
+        - Pro: $30/month - Access to all courses, Advanced AI support, Community access, Personalized learning paths.
+        - Premium: $50/month - Access to all courses, Premium AI support, Community access, Personalized learning paths, 1-on-1 mentoring.
+
+        4. User Management:
+        - Users can sign up, log in, and reset passwords.
+        - User state is managed using local storage for persistence.
+        - Logged-in users can access a personalized dashboard.
+
+        5. Navigation:
+        - Sections are shown or hidden based on user interactions.
+        - Auth-required sections redirect to the login page if the user is not logged in.
+
+        6. Contact Form:
+        - Users can submit queries through a contact form.
+        - Form submissions are handled via JavaScript.
+
+        7. Technologies Used:
+        - JavaScript: For dynamic content and interactive features.
+        - HTML: For structuring web pages.
+        - CSS: For styling web pages.
+        - Font Awesome: For incorporating icons.
+        - Local Storage: For managing user state.
+
+        8. Initialization:
+        - On page load, the saved theme and user state are retrieved from local storage.
+        - The initial section is displayed based on user state.
+
+        9. Testimonials:
+        - User testimonials highlight the positive impact of NeuraLearn on their learning experience.
+
+        10. Courses:
+        - A variety of courses are available, covering topics like AI, Machine Learning, Data Science, and more.
+        - Users can enroll in courses and track their progress.
+
+        11. Dashboard:
+        - The dashboard provides an overview of the user's learning journey, including progress, tasks, and achievements.
+
+        12. Social Media Integration:
+        - Links to social media profiles (Instagram, GitHub, Twitter) are provided for users to connect with NeuraLearn.
+
+        NeuraLearn aims to revolutionize digital learning by leveraging AI technology to create a personalized and engaging educational experience.
